@@ -8,7 +8,7 @@ In the future, we plan on converting PyOMP to a Numba extension which should eli
 Installing with Conda
 ---------------------
 
-conda install drtodd13::numba cffi -c conda-forge –override-channels
+conda install Python-for-HPC::numba cffi -c conda-forge –override-channels
 
 Building
 --------
