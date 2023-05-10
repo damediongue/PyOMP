@@ -8,7 +8,7 @@ In the future, we plan on converting PyOMP to a Numba extension which should eli
 Installing with Conda
 ---------------------
 
-conda install Python-for-HPC::numba cffi -c conda-forge –override-channels
+conda install Python-for-HPC::numba -c conda-forge –override-channels
 
 Building
 --------
@@ -21,6 +21,12 @@ Using
 Import Numba and add the njit decorator to the function in which you want to use OpenMP.
 Add with contexts for each OpenMP region you want to have where the with context is
 openmp_context from the numba.openmp module.
+
+The most common target directive (target teams distribute parallel for) should now work.
+Some other variations of target directives and nested directives also work but not all
+combinations are currently supported.  Target directives support the device clause and
+for PyOMP, device(0) always refers to a multi-core CPU target device where as device(1)
+always refers to an Nvidia target device.
 
 Example
 -------
