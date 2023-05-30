@@ -8,7 +8,7 @@ In the future, we plan on converting PyOMP to a Numba extension which should eli
 Installing with Conda
 ---------------------
 
-conda install Python-for-HPC::numba -c conda-forge –override-channels
+conda install Python-for-HPC::numba Python-for-HPC::llvmlite -c conda-forge –override-channels
 
 Building
 --------
