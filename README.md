@@ -15,18 +15,22 @@ Installing with Docker
 
 # arm64 with Jupyter
 docker pull ghcr.io/ggeorgakoudis/pyomp-jupyter-arm64:latest
+
 docker run -t -p 8888:8888 pyomp-jupyter
 
 # arm64 terminal
 docker pull ghcr.io/ggeorgakoudis/pyomp-arm64:latest
+
 docker run -it pyomp 
 
 # amd64 with Jupyter
 docker pull ghcr.io/ggeorgakoudis/pyomp-jupyter-amd64:latest
+
 docker run -t -p 8888:8888 pyomp-jupyter
 
 # amd64 terminal
 docker pull ghcr.io/ggeorgakoudis/pyomp-amd64:latest
+
 docker run -it pyomp 
 
 Building
